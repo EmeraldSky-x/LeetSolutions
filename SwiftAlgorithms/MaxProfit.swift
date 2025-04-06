@@ -5,7 +5,7 @@
 //  Created by SWAT on 06/04/25.
 //
 
-import Foundation
+
 //MARK: - 121. Best timeto buy and sell stock
 func maxProfit(_ prices: [Int]) -> Int {
         if (prices.count < 2) { return 0 }
