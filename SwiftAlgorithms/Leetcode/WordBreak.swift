@@ -15,7 +15,7 @@ class WordBreakSolution {
         }
         for word in wordDict {
             if s.hasPrefix(word) {
-                var newWord = String(s.dropFirst(word.count))
+                let newWord = String(s.dropFirst(word.count))
                 if wordBreak(newWord, wordDict) {
                     cache[s] = true
                     return true
