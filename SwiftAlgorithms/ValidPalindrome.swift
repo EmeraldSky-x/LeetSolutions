@@ -7,7 +7,6 @@
 
 
 //MARK: - 125.Valid Palidrome
-
 func isPalindrome(_ s: String) -> Bool {
     let letters = s.lowercased().filter({ $0.isLetter || $0.isNumber })
     var leadingPointer: Int = 0
