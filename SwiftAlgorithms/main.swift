@@ -6,3 +6,6 @@
 //
 
 import Foundation
+print(threeSum([-1,0,1,2,-1,-4]))
+
+[-4,-1,-1,0,1,2]
