@@ -6,5 +6,5 @@
 //
 
 import Foundation
-var input = [0]//[0,0,1,1,1,2,2,3,3,4]
-print(hIndex(input))
+var input = [7,1,5,3,6,4]
+print(maxProfit2(input))
