@@ -7,7 +7,7 @@
 
 //MARK: - 238. Product of Array except self.
 func productExceptSelf(_ nums: [Int]) -> [Int] {
-    var product = nums.reduce(1, *)
+    let product = nums.reduce(1, *)
     var result = Array(repeatElement(product, count: nums.count))
     for (index, value) in nums.enumerated() {
         if value == 0 {
