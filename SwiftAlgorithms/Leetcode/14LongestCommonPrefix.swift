@@ -5,7 +5,7 @@
 //  Created by SWAT on 18/04/25.
 //
 
-//MARK: - 14. Longest Prefix
+//MARK: - 14. Longest common prefix
 func longestCommonPrefix(_ strs: [String]) -> String {
     var tempArray = strs
     var result: String = ""
