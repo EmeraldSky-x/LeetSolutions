@@ -7,28 +7,22 @@
 
 //MARK: - 26, Remove Duplicates
 func removeDuplicates(_ nums: inout [Int]) -> Int {
-    var duplicatesMap: [Int: Bool] = [:]
-    var swapPointer: Int = -1
-    for i in 0..<nums.count {
-        let currentValue = nums[i]
-        if duplicatesMap[currentValue] == nil {
-            duplicatesMap[currentValue] = true
-            if swapPointer != -1 {
-                nums[swapPointer] = currentValue
-                swapPointer += 1
-            }
+    var previousValue: Int?
+    var index = 0
+    while index < nums.count {
+        let value = nums[index]
+        guard let _ = previousValue else {
+            previousValue = value
+            index += 1
+            continue
+        }
+        let currentValue = nums[index]
+        if currentValue == previousValue {
+            nums.remove(at: index)
         } else {
-            if swapPointer == -1 {
-                swapPointer = i
-                continue
-            }
-            
+            index += 1
+            previousValue = currentValue
         }
     }
-    if swapPointer != -1 {
-        nums.removeSubrange(swapPointer..<nums.count)
-        return swapPointer + 1
-    } else {
-        return nums.count
-    }
+    return index
 }

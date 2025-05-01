@@ -6,5 +6,9 @@
 //
 
 import Foundation
+var list = [0,0,1,1,1,2,2,3,3,4]
+//let _ = reverseKGroup(list, 2)
 
-print(longestCommonPrefix(["baab","bacb"]))
+let values = removeDuplicates(&list)
+
+print(values)
