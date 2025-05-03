@@ -6,9 +6,9 @@
 //
 
 import Foundation
-var list = [0,0,1,1,1,2,2,3,3,4]
+var list = [-84,92,26,19,-7,9,42,-51,8,30,-100,-13,-38]
 //let _ = reverseKGroup(list, 2)
 
-let values = removeDuplicates(&list)
+let values = threeSumClosest(list, 78)
 
 print(values)
