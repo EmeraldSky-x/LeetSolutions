@@ -9,6 +9,6 @@ import Foundation
 var list = [-84,92,26,19,-7,9,42,-51,8,30,-100,-13,-38]
 //let _ = reverseKGroup(list, 2)
 
-let values = threeSumClosest(list, 78)
+let values = strStr("aaa", "aaaa")
 
 print(values)
