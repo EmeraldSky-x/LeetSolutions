@@ -6,9 +6,9 @@
 //
 
 import Foundation
-var list = [-84,92,26,19,-7,9,42,-51,8,30,-100,-13,-38]
+var list = [1,3,5,6]
 //let _ = reverseKGroup(list, 2)
 
-let values = strStr("aaa", "aaaa")
+let values = searchInsert(list, 4)
 
 print(values)
