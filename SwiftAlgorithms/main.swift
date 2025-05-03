@@ -9,6 +9,6 @@ import Foundation
 var list = [1,3,5,6]
 //let _ = reverseKGroup(list, 2)
 
-let values = searchInsert(list, 4)
+let values = lengthOfLastWord("day    ")
 
 print(values)
