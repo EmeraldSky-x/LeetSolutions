@@ -6,9 +6,9 @@
 //
 
 import Foundation
-var list = [1,3,5,6]
+var list = [4,3,2,1]
 //let _ = reverseKGroup(list, 2)
 
-let values = lengthOfLastWord("day    ")
+let values = plusOne(list)
 
 print(values)
